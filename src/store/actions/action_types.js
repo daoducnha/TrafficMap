@@ -1,0 +1,5 @@
+export const FETCH_API_START = "FETCH_API_START";
+export const FETCH_API_SUCCESS = "FETCH_API_SUCCESS";
+export const FETCH_API_FAILURE = "FETCH_API_FAILURE";
+export const ADD_API_DATA = "ADD_API_DATA";
+
