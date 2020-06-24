@@ -1,0 +1,23 @@
+{
+  "name": "trafficmap",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@urbica/react-map-gl": "^1.13.1",
+    "dotenv": "^8.2.0",
+    "mapbox-gl": "^1.11.0",
+    "r": "0.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-map-gl": "^5.2.7",
+    "react-scripts": "0.9.5",
+    "reactstrap": "^8.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
