@@ -45,6 +45,20 @@ export default class Map extends Component {
     map.on("click", "points", (e) => {
       const coordinates = e.features[0].geometry.coordinates.slice();
       const {details, description, impact, duration} = e.features[0].properties; 
+
+      while(Math.abs(e.lngLat.lng - coordinates[0]) >180) {
+        coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+      }
+
+      new MapboxGL.Popup()
+      .setLngLat(coordinates)
+      .setHTML(`
+        <strong>${description}</strong>
+        <em>${impact}</em>
+        <em>${duration}</em>
+        <p>${details}</p>
+      `)
+      .addTo(map);
     });
     this.setState({ map });
   }
