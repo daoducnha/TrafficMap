@@ -6,14 +6,6 @@ const pinStyle = {
     stroke: 'none'
 }
 
-// const pinStyle = {
-//     padding: '10px',
-//     color: '#fff',
-//     cursor: 'pointer',
-//     background: '#1978c8',
-//     borderRadius: '6px'
-//   };
-
 export default class CityPin extends PureComponent {
     render() {
         const {size=20, onClick} = this.props;
